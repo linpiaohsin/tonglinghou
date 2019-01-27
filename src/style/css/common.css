@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body,
+  ol,
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  th,
+  td,
+  dl,
+  dd,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  select {
+    margin: 0;
+    padding: 0
+  }
+  
+  body {
+    font: 14px"宋体", "Arial Narrow", HELVETICA;
+    font-family:MicrosoftYaHei;
+    background: #FFFFFF;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  a {
+    color: #999999;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #00B1FF;
+  }
+  
+  em {
+    font-style: normal
+  }
+  
+  li {
+    list-style: none
+  }
+  
+  img {
+    border: 0;
+    vertical-align: middle
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0
+  }
+  
+  p {
+    word-wrap: break-word
+  }
+  
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+  .clearfix:after{
+    content: "020"; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;  
+    }
+  
+  .clearfix {
+    zoom: 1; 
+    }
+  
+  button{
+    border: none;
+  }
+  .content{
+    background: rgb(255, 255, 255);
+    padding: 26px 30px;
+    position: relative;
+    min-width: 1200px;
+  }
+  .content>h4{
+      text-align: left;
+      color: #333333;
+      font-size: 18px;
+      font-family: PingFang-SC-Bold;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #e1e1e1;
+  }
+  .mgt20{
+    margin-top: 20px;
+  }
+  .mgt20{
+    margin-top: 30px;
+  }
+  .operation{
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius:8px;
+    padding: 30px 20px;
+  }
+  .content{
+    padding: 0 !important;
+  }
+  .table{
+    background: white;
+    padding: 28px 38px;
+    border-radius:8px;
+    min-height: 480px;
+  }
+  .mgb0{
+  margin-bottom: 0 !important;
+  }
+  
+  /* 二级标题头部 */
+  .subTitleTop {
+    height: 68px;
+    line-height: 68px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .subTitleTop>span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .el-table th>.cell{
+    text-align: center;
+  }
+  .el-table .cell{
+    text-align: center;
+  }
+  body{
+    height: 100%;
+  }
