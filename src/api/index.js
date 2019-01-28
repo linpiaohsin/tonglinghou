@@ -1,30 +1,68 @@
 import axios from 'axios'
 
-import * as homepage from './homepage.js'
-import * as payment from './payment.js'
-import * as agentInfo from './agent.js'
-import * as buyBill from './buyDia.js'
-import * as mined from './mine.js'
+import * as userManagement from './users.js'
+import * as factoryManagement from './factory.js'
 
-axios.defaults.baseURL = 'http://192.168.31.248:8080/QunYuGamePlatform/'
+import * as guestManagement from './cusUser.js'
+import * as statisticsManagement from './statistics.js'
 
-// axios.defaults.baseURL = 'http://211.110.66.25:8080/QunYuGamePlatform/'
+import * as dictionariesManagement from './dictionaries.js'
+
+import * as priceSystemManagement from './priceSystem.js'
+import * as commonManagement from './common.js'
+
+import * as informationManagement from './information.js'
+import * as informationClient from './client.js'
+
+import * as informationOrder from './order.js'
+import vm from '@/main.js'
+// axios.defaults.baseURL = 'http://192.168.31.108:2018/web/api/'
+
+axios.defaults.baseURL = 'http://47.106.243.1:2018/web/api/'
 
 axios.defaults.withCredentials = true
 
-export const home = homepage
+axios.interceptors.response.use((response) => {
+  if (response.data.code === 10000) {
+    vm.$router.push('/')
+  }
+  return Promise.resolve(response)
+}, (error) => {
+  console.log('>>>>>>', error)
+  return Promise.resolve(error)
+})
+// 公共服务
+export const common = commonManagement
+// 导出用户管理模块
+export const sysUser = userManagement
 
-export const pay = payment
+// 信息管理模块
+export const information = informationManagement
 
-export const agent = agentInfo
+// 客户管理模块
+export const client = informationClient
 
-export const bill = buyBill
+// 工厂模块
+export const factory = factoryManagement
 
-export const mine = mined
+// 用户管理 模块 （客户管理）
+export const guest = guestManagement
 
-// 用户登录接口
-export const findAgentCard = (params) => {
-  return axios.post('agent/findAgentCardById', params).then(res => {
+// 报表统计 模块
+export const statistics = statisticsManagement
+
+// 字典表
+export const dictionaries = dictionariesManagement
+
+// 价格体系设置模块
+export const priceSystem = priceSystemManagement
+
+// 订单
+export const order = informationOrder
+
+// 按钮权限控制
+export const menuBtnControl = (params) => {
+  return axios.post('servepc/sysMenu/getSysMenuAnNiu', params).then(res => {
     return res.data
   })
 }

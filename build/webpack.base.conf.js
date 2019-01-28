@@ -8,16 +8,16 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-// const createLintingRule = () => ({
-//   test: /\.(js|vue)$/,
-//   loader: 'eslint-loader',
-//   enforce: 'pre',
-//   include: [resolve('src'), resolve('test')],
-//   options: {
-//     formatter: require('eslint-friendly-formatter'),
-//     emitWarning: !config.dev.showEslintErrorsInOverlay
-//   }
-// })
+const createLintingRule = () => ({
+  // test: /\.(js|vue)$/,
+  // loader: 'eslint-loader',
+  // enforce: 'pre',
+  // include: [resolve('src'), resolve('test')],
+  // options: {
+  //   formatter: require('eslint-friendly-formatter'),
+  //   emitWarning: !config.dev.showEslintErrorsInOverlay
+  // }
+})
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -36,11 +36,12 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'vendor': path.resolve(__dirname, '/src/assets/vendor'), //新增加一行导出文件
     }
   },
   module: {
     rules: [
-      // ...(config.dev.useEslint ? [createLintingRule()] : []),
+      ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -74,14 +75,12 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },{
-        test: /\\\\\\\\.css$/,
-        loader: "style!css"
-    },
-    {
-        test: /\\\\\\\\.(eot|woff|woff2|ttf)([\\\\\\\\?]?.*)$/,
-        loader: "file"
-    } 
+      }
+      // 引入scss文件 12.6
+      // {
+      //   test: /\.scss$/,
+      //   loaders: ["style", "css", "sass"]
+      // }
     ]
   },
   node: {

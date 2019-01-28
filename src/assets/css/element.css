@@ -1,0 +1,167 @@
+/* 输入框 */
+
+.home .el-input {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.home .el-input__inner {
+  color: #888;
+  border: 1px solid rgba(187, 187, 187, 1);
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+.home .el-input__icon{
+  line-height: 30px;
+}
+.timeSelect .el-input{
+  width: 400px;
+}
+.timeSelect .el-input__inner{
+  width: 400px;
+}
+.el-select .el-input__inner:focus{
+  border-color: rgba(187, 187, 187, 1);
+  
+}
+.el-select .el-input.is-focus .el-input__inner{
+  border-color: rgba(187, 187, 187, 1);
+}
+/* 搜索框 */
+.search .el-input,.search .el-input__inner{
+  width: 136px;
+}
+/* 文本域 */
+.el-textarea__inner{
+  resize:none;
+  border: 1px solid #bbb;
+}
+.el-form-item__label{
+  font-size: 16px;
+}
+/* 表格 */
+.el-table .cell{
+  text-align: center;
+}
+ .home .el-table th{
+    background: #f9f9f9;
+}
+.el-table th>.cell{
+  color: #333;
+  font-size: 14px;
+}
+
+/* 上传图片 */
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.home .avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+/* 分页 */
+.pages{
+  margin-top: 40px;
+  text-align: center;
+}
+.home .pages .el-input{
+  width: 60px;
+}
+.home .pages .el-input__inner{
+  width: 50px;
+  text-indent: 0;
+}
+
+/* 对话框标题 */
+.el-dialog__footer{
+  padding: 10px 20px 30px;
+}
+.el-dialog__header{
+  text-align-last: left;
+}
+.el-dialog__title{
+  color: #666;
+  font-weight: bold;
+}
+
+/* 多选框 */
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #101010;
+  border-color: #101010;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: #101010;
+
+}
+.el-checkbox+.el-checkbox{
+  margin-left: 15px;
+}
+.el-radio__input.is-checked .el-radio__inner, .el-radio__input.is-indeterminate .el-radio__inner{
+  background-color: #101010;
+  border-color: #101010;
+}
+.el-radio__input.is-checked+.el-radio__label{
+  color: #101010;
+}
+
+/* 时间选择器 */
+.timeSelect .el-date-editor--datetimerange.el-input, .timeSelect .el-date-editor--datetimerange.el-input__inner{
+  width: 400px;
+}
+.timeSelect .el-input__icon{
+  line-height: 20px;
+}
+.timeSelect .el-date-editor .el-range-separator{
+  line-height: 20px;
+}
+/* 标签页 */
+.el-tabs--card>.el-tabs__header{
+  border: none;
+}
+.el-tabs__item{
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 40px;
+  width: 160px;
+  text-align: center;
+  background-color: #999;
+}
+.el-tabs__item:hover{
+  background-color: #409EFF;
+  font-size: 16px;
+  color: #fff;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+  border-bottom-color:#409EFF;
+}
+.el-tabs__item.is-active{
+  background-color: #409EFF;
+  font-size: 16px;
+  color: #fff;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__nav{
+  border:none;
+}
+/* 评分 */
+.el-rate__icon{
+  font-size: 22px;
+}

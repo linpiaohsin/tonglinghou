@@ -1,0 +1,159 @@
+/* 子标题 */
+.titleTop{
+    padding: 20px 10px;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 2px solid #ccc;
+    padding-left: 40px;
+    font-weight: bold;
+  }
+  /* 主要内容 */
+  .main{
+    padding:  0 120px 0 40px;
+    min-width: 1130px;
+    color: #333;
+  }
+  .main2{
+    min-width: 1130px;
+    color: #606266;
+  }
+
+  /* 按钮 */
+  .btn {
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: rgba(2, 137, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+  .btnMin {
+    width: 108px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: rgba(2, 137, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+  /* 小按钮 */
+  .minBtn {
+    width: 108px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: rgba(2, 137, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+
+  /* 输入框 */
+  input {
+    width: 200px;
+    height: 30px;
+    color: #888;
+    font-size: 14px;
+    text-indent: 10px;
+    border: 1px solid rgba(187, 187, 187, 1);
+    outline-color: none;
+    border-radius: 4px;
+  }
+  input:focus{
+    border-color: rgba(187, 187, 187, 1);
+  }
+  /* 大输入框 */
+  .ipt{
+    width: 150px;
+    color: rgba(136, 136, 136, 1);
+    border-radius: 4px;
+    outline-color: #999;
+  }
+  /* 中等输入框 */
+  .iptMedium{
+    width: 76px;
+    color: rgba(136, 136, 136, 1);
+    border-radius: 4px;
+  }
+  /* 小输入框 */
+  .iptMIni{
+    width: 43px;
+    color: rgba(136, 136, 136, 1);
+    border-radius: 4px;
+  }
+
+  /* 表格 */
+  table.gridtable {
+      font-family: verdana,arial,sans-serif;
+      font-size:16px;
+      color:#333333;
+      border-width: 1px;
+      border-color: #bbb;
+      border-collapse: collapse;
+      border-radius: 4px;
+  }
+  table.gridtable th {
+      min-width: 140px;
+      border-width: 1px;
+      padding: 8px 20px;
+      border-style: solid;
+      border-color: #bbb;
+      background-color: #dedede;
+      text-align: left;
+  }
+  table.gridtable td {
+      border-width: 1px;
+      padding: 8px 20px;
+      border-style: solid;
+      border-color: #bbb;
+      background-color: #ffffff;
+  }
+
+  /* 文字溢出省略号 */
+  .text{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+  }
+
+  /* 强调文字 */
+  em{
+    color: #ff0000;
+  }
+
+  /* 订单模块 */
+  .detail{
+    border-bottom: 1px solid #bbb;
+    background-color: #f4f4f4;
+    h4{
+      font-size: 18px;
+      padding: 10px;
+      em{
+        font-weight: bold;
+      }
+    }
+    // 详情
+    .describe{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 1400px;
+      margin-top: 10px;
+      // 图片
+      .oImg{
+        margin: 20px;
+      }
+      li{
+        margin-bottom: 10px;
+        h5{
+          font-size: 18px;
+        }
+      }
+    }
+  }
